@@ -24,13 +24,15 @@
       <section class="container">
         <div class="row col-md-2">
           <h1>Search For City:</h1>
-          <div class="col-sm-12">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="City"
-              aria-label="City"
-            />
+          <div class="input-group mb-3">
+          
+            <select class="form-select" id="cityInput">
+              <option selected>Choose...</option>
+              <option value="atlanta">Atlanta</option>
+              <option value="houston">Houston</option>
+              <option value="seattle">Seattle</option>
+            </select>
+            <button class="btn btn-outline-secondary" type="button">Search</button>
           </div>
         </div>
       </section>
