@@ -25,6 +25,8 @@ const seattle = {
 
 searchBTN.addEventListener('click', function() {
     city = cityInput.value;
+    console.log(city)
+    
     return city
 })
 
