@@ -7,15 +7,22 @@ var cityInput = document.getElementById("cityInput");
 let city;
 
 const cities = {
-  Atlanta: { lat: 33.749, lon: -84.388 },
-  Houston: { lat: 29.7604, lon: -95.3698 },
-  Seattle: { lat: 47.6062, lon: -122.3321 },
+  atlanta: { lat: 33.749, lon: -84.388 },
+  houston: { lat: 29.7604, lon: -95.3698 },
+  seattle: { lat: 47.6062, lon: -122.3321 },
 };
+cityInput.addEventListener("change", ()=>{
+
+console.log(cityInput.value);
+localStorage.setItem('city', cityInput.value)
+})
+
 
 function getWeather() {
-  city = cityInput.value;
-let lat = 33.749
-let lon =-84.388
+const city = localStorage.getItem('city')
+  
+let lat = cities[city].lat
+let lon =-cities[city].lon
   console.log(lat);
   var queryURL = `https://api.openweathermap.org/data/2.5/weather?units=imperial&lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
