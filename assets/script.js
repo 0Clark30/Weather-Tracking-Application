@@ -4,6 +4,17 @@ var searchBTN = document.getElementById("searchBtn");
 var mainForecast = document.getElementById("mainForecast");
 var cityInput = document.getElementById("cityInput");
 
+var date1 = document.getElementById('date1');
+var content1 = document.getElementById('content1')
+var date2 = document.getElementById("date2");
+var content2 = document.getElementById("content2");
+var date3 = document.getElementById("date3");
+var content3 = document.getElementById("content3");
+var date4 = document.getElementById("date4");
+var content4 = document.getElementById("content4");
+var date5 = document.getElementById("date5");
+var content5 = document.getElementById("content5");
+
 let city;
 
 const cities = {
@@ -46,7 +57,7 @@ let lon =-cities[city].lon
       mainForecast.append(temp);
       mainForecast.append(wind);
       mainForecast.append(humidity);
-
+      date1.append()
 
 
       
